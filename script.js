@@ -8,10 +8,8 @@ const resultsDiv = document.getElementById('results');
 const loadingSpinner = document.querySelector('.loading-spinner');
 const btnText = document.querySelector('.btn-text');
 
-// Dice button random prompt functionality
 const diceBtn = document.getElementById('diceBtn');
 
-// Add a list of sample prompts
 const randomPrompts = [
     "A futuristic cityscape at sunset, neon lights reflecting on wet streets",
     "A cute fantasy creature sitting on a mushroom, colorful forest",
@@ -26,11 +24,9 @@ const randomPrompts = [
 ];
 
 diceBtn.addEventListener('click', () => {
-    // Pick a random prompt from the array
     const randomIndex = Math.floor(Math.random() * randomPrompts.length);
     const randomPrompt = randomPrompts[randomIndex];
 
-    // Set it in the textarea
     promptInput.value = randomPrompt;
 });
 
